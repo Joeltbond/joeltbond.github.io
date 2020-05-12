@@ -1,0 +1,57 @@
+html,
+body {
+  font-family: Optima, Times, serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #3f98b7;
+}
+
+ul li {
+  line-height: 1.5;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 40px 0;
+  overflow-x: scroll;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+header {
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline;
+    padding-left: 20px;
+  }
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
