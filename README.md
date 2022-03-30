@@ -1,11 +1,20 @@
 # Joel Bond
 
-I make music under the name [Fort Jams](https://fortjams.bandcamp.com/) and work as a software engineer at [Acorns](https://acorns.com).
+I'm a software developer currently working at [quin](https://helloquin.com). I live in Portland, Oregon with my wife an two kids.
 
-- [Bandcamp](https://fortjams.bandcamp.com/)
-- [Medium](https://medium.com/@joeltbond)
+### Previously
+
+I have over eight years of experience as a developer. I worked on business checking at [Cross River](https://www.crossriver.com). I worked on Roundups and Earn/Found Money at [Acorns](https://www.acorns.com). I did web development for various [other companies](https://read.cv/joeltbond) before that.
+
+In my previous life, I spent most of my time making music, both [alone](https://fortjams.bandcamp.com/) and with other bands. It's been some time since this has been a significant part of by life but I hope to come back around to it before long.
+
+We'll see.
+
+### Elsewhere On the Web
+
+- [Twitter](https://twitter.com/@joeldotcomputer)
 - [GitHub](https://github.com/Joeltbond)
 
 ### Contact
 
-[joeltbond@gmail.com](mailto:joeltbond@gmail.com)
+- [joel.bond@hey.com](mailto:joel.bond@hey.com)
