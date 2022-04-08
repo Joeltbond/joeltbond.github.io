@@ -18,6 +18,6 @@ We'll see.
 - [Twitter](https://twitter.com/@joeldotcomputer)
 - [GitHub](https://github.com/Joeltbond)
 
-### Contact
+### Email
 
-- [joel.bond@hey.com](mailto:joel.bond@hey.com)
+- me @ joel dot computer

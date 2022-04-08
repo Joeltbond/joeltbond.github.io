@@ -15,6 +15,6 @@ We'll see.
 - [Twitter](https://twitter.com/@joeldotcomputer)
 - [GitHub](https://github.com/Joeltbond)
 
-### Contact
+### Email
 
 - me @ joel dot computer
