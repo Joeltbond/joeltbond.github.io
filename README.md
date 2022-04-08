@@ -17,4 +17,4 @@ We'll see.
 
 ### Contact
 
-- [joel.bond@hey.com](mailto:joel.bond@hey.com)
+- me @ joel dot computer
