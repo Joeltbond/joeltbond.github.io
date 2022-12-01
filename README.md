@@ -1,6 +1,6 @@
 # Joel Bond
 
-I'm a software developer currently working at [quin](https://helloquin.com). I live in Portland, Oregon with my wife an two kids.
+I'm a software developer currently working at [quil](https://getquil.com). I live in Portland, Oregon with my wife an two kids.
 
 ### Previously
 
@@ -17,4 +17,4 @@ We'll see.
 
 ### Email
 
-- me @ joel dot computer
+- joel dot bond @ hey dot com

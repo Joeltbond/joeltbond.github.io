@@ -6,6 +6,14 @@ body {
   padding: 20px 20px;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 p {
   line-height: 1.5;
 }
@@ -31,9 +39,6 @@ h2 {
   margin-top: 50px;
 }
 
-header {
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -48,6 +53,30 @@ nav {
     display: inline;
     padding-left: 20px;
   }
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  --page-top: 3.2rem;
+
+  @media (min-width: 43rem) {
+    --page-top: 6.4rem;
+  }
+
+  @media (min-width: 62rem) {
+    --page-top: 12.8rem;
+  }
+
+  @media (min-width: 82rem) {
+    --page-top: 19.2rem;
+  }
+}
+
+main {
+  margin-top: var(--page-top);
 }
 
 .post-list {
