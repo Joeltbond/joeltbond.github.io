@@ -6,13 +6,10 @@ I'm a software developer currently working at [quil](https://getquil.com). I liv
 
 I have over eight years of experience as a developer. I worked on business checking at [Cross River](https://www.crossriver.com). I worked on Roundups and Earn/Found Money at [Acorns](https://www.acorns.com). I did web development for various [other companies](https://read.cv/joeldotcomputer) before that.
 
-In my previous life, I spent most of my time making music, both [alone](https://fortjams.bandcamp.com/) and with other bands. It's been some time since this has been a significant part of by life but I hope to come back around to it before long.
-
-We'll see.
-
 ### Elsewhere On the Web
-
-- [Twitter](https://twitter.com/@joeldotcomputer)
+- [read.cv](https://read.cv/joeldotcomputer) - like a sane [LinkedIn](https://www.linkedin.com/in/joel-bond-a9b4b425b/)
+- [Twitter](https://twitter.com/@joeldotcomputer) - I post weird coding and design experiments every once in a while
+- [Instagram](https://www.instagram.com/joel.bond_/) - Just stories
 - [GitHub](https://github.com/Joeltbond)
 
 ### Email
