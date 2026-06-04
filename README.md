@@ -1,10 +1,8 @@
 # Joel Bond
 
-I'm a software engineer at [Stash](https://www.stash.com), and I live in Portland, Oregon with my wife and our two kids.
-
 ### Lately
 
-Lately I've been building tools for myself — personal AI agents and command-line software — and tinkering with DIY synths when I want to be away from a screen.
+These days I'm a software engineer at [Stash](https://www.stash.com), and on the side I've been building tools for myself — personal AI agents and command-line software — and tinkering with DIY synths when I want to be away from a screen.
 
 ### Previously
 
