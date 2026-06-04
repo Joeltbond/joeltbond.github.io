@@ -1,9 +1,38 @@
-html,
-body {
-  font-family: Optima, Times, serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px 20px;
+:root {
+  --max-width: 44rem;
+  --bg: #fbfaf7;
+  --text: #2b2b2b;
+  --muted: #7a756c;
+  --accent: #3f98b7;
+  --accent-strong: #2f7d99;
+  --rule: #e7e3da;
+  --code-bg: #f1eee7;
+
+  --page-top: 3.2rem;
+
+  @media (min-width: 43rem) {
+    --page-top: 6.4rem;
+  }
+
+  @media (min-width: 62rem) {
+    --page-top: 9.6rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1d1f;
+    --text: #e6e3dc;
+    --muted: #9a958c;
+    --accent: #6fbcd6;
+    --accent-strong: #93cfe4;
+    --rule: #333538;
+    --code-bg: #26282b;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -11,32 +40,132 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-family: Optima, Candara, "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 24px 80px;
+  color: var(--text);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  margin-top: var(--page-top);
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 a {
+  color: var(--accent);
   text-decoration: none;
-  color: #3f98b7;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-strong);
+  border-bottom-color: currentColor;
+}
+
+/* In-body links read as links even without color: a faint underline that
+   firms up on hover. Nav/header links keep the borderless treatment. */
+main p a,
+main li a {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in srgb, var(--accent) 38%, transparent);
+}
+
+main p a:hover,
+main li a:hover {
+  border-bottom: none;
+  text-decoration-color: currentColor;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.page-title {
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.6em;
+}
+
+h2,
+h3 {
+  margin-top: 2.4em;
+  margin-bottom: 0.4em;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--rule);
 }
 
 ul li {
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+/* Content lists (Elsewhere on the Web, Email): drop the heavy default
+   indent and disc for a quiet, left-aligned en-dash marker. */
+main ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.4em 0 0;
+}
+
+main ul li {
+  position: relative;
+  padding-left: 1.2em;
+  margin-bottom: 0.15em;
+}
+
+main ul li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
 }
 
 pre {
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 4px;
-  margin: 40px 0;
-  overflow-x: scroll;
+  background-color: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 6px;
+  margin: 32px 0;
+  overflow-x: auto;
 }
 
-h2 {
-  margin-top: 50px;
+code {
+  background-color: var(--code-bg);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  font-size: 0.9em;
+}
+
+pre code {
+  background: none;
+  padding: 0;
 }
 
 nav {
@@ -55,32 +184,34 @@ nav {
   }
 }
 
-html {
-  font-size: 10px;
+.navigation {
+  margin-bottom: 2rem;
 }
 
-:root {
-  --page-top: 3.2rem;
-
-  @media (min-width: 43rem) {
-    --page-top: 6.4rem;
-  }
-
-  @media (min-width: 62rem) {
-    --page-top: 12.8rem;
-  }
-
-  @media (min-width: 82rem) {
-    --page-top: 19.2rem;
-  }
-}
-
-main {
-  margin-top: var(--page-top);
+.header-link {
+  font-weight: 600;
 }
 
 .post-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* A quiet entrance — skipped for anyone who prefers reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  main {
+    animation: fade-in 0.5s ease both;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }
