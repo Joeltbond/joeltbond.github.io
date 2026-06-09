@@ -5,7 +5,7 @@ title: Joel Bond
 
 I'm a software engineer, currently at [Stash](https://www.stash.com). I live in Portland, Oregon with my wife and two kids.
 
-Lately I've been building with AI agents — software that can actually do things on its own, not just answer questions. I run a lot of my own day through one, and it's shown me how much a single person can get done this way. What I care about is doing it carefully: agents that act for you without you losing track of what they're up to.
+Lately I've been building with AI agents, like everybody else. I run a lot of my own day through one, which has shown me how much a single person can get done this way. What I care about is doing it carefully: agents that act for you without you losing track of what they're up to.
 
 ### Previously
 
