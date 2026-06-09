@@ -1,7 +1,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Joel Bond — software engineer in Portland, Oregon." />
+  <meta name="description" content="{{ site.description | strip_newlines | strip }}" />
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ site.description | strip_newlines | strip }}" />
+  <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | default: site.title }}</title>
 </head>
