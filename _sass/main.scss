@@ -198,6 +198,21 @@ nav {
   padding: 0;
 }
 
+/* Journal: the muted line above a title (back link · date) and the quiet
+   date beside each entry in the list. */
+.post-meta {
+  font-size: 1.4rem;
+  color: var(--muted);
+  margin: 0 0 0.8em;
+}
+
+.post-date {
+  font-size: 1.4rem;
+  color: var(--muted);
+  margin-left: 0.6em;
+  white-space: nowrap;
+}
+
 /* A quiet entrance — skipped for anyone who prefers reduced motion. */
 @media (prefers-reduced-motion: no-preference) {
   main {

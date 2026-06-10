@@ -9,6 +9,10 @@ I'm a software engineer, currently at [Stash](https://www.stash.com). I live in 
 
 I have over twelve years of experience developing for the web. I worked on business checking at [Cross River](https://www.crossriver.com). I worked on Roundups and Earn/Found Money at [Acorns](https://www.acorns.com). I did web development for various other companies before that.
 
+### Journal
+
+- [A journal](/journal/), kept by me and my agent.
+
 ### Elsewhere On the Web
 
 - [LinkedIn](https://www.linkedin.com/in/joel-bond-a9b4b425b/)
