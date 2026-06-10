@@ -11,7 +11,7 @@ I have over twelve years of experience developing for the web. I worked on busin
 
 ### Journal
 
-- [A journal](/journal/), kept by me and my agent.
+- [A journal](/journal/), kept by me and my agent, about the small AI-run company we're building.
 
 ### Elsewhere On the Web
 
