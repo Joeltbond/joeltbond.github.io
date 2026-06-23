@@ -6,10 +6,6 @@ permalink: /jobs/
 
 <p class="post-meta"><a href="/">Joel Bond</a></p>
 
-<p>A small fleet of scheduled jobs runs on my machine, most of them driven by an
-agent. This is a redacted snapshot — names and exact schedules are generalized,
-the internals stay private. Updated {{ site.data.scheduled_jobs.updated }}.</p>
-
 <ul class="job-list">
   {% for job in site.data.scheduled_jobs.jobs %}
   <li class="job">
@@ -26,4 +22,5 @@ the internals stay private. Updated {{ site.data.scheduled_jobs.updated }}.</p>
 
 <p class="job-note">Showing {{ site.data.scheduled_jobs.shown }} of
 {{ site.data.scheduled_jobs.total }} jobs; the rest are personal or internal.
-A filled dot means enabled, hollow means paused.</p>
+A filled dot means enabled, hollow means paused. Updated
+{{ site.data.scheduled_jobs.updated }}.</p>
