@@ -198,6 +198,74 @@ nav {
   padding: 0;
 }
 
+/* Scheduled-jobs status board (/jobs/). A quiet list: a status dot, the job
+   name with a cadence tag, and a one-line blurb under it. */
+.job-list {
+  list-style: none;
+  margin: 1.6em 0 0;
+  padding: 0;
+}
+
+.job-list .job {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7em;
+  padding: 0.7em 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.job-list .job::before {
+  content: none; /* override the default en-dash marker */
+}
+
+.job-status {
+  flex: 0 0 auto;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  margin-top: 0.45em;
+  border: 1.5px solid var(--accent);
+}
+
+.job-status.is-on {
+  background: var(--accent);
+}
+
+.job-status.is-off {
+  background: transparent;
+  border-color: var(--muted);
+}
+
+.job-body {
+  display: block;
+}
+
+.job-name {
+  font-weight: 600;
+}
+
+.job-cadence {
+  font-size: 1.3rem;
+  color: var(--muted);
+  margin-left: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.job-blurb {
+  display: block;
+  color: var(--muted);
+  font-size: 1.5rem;
+  line-height: 1.45;
+  margin-top: 0.1em;
+}
+
+.job-note {
+  font-size: 1.4rem;
+  color: var(--muted);
+  margin-top: 1.6em;
+}
+
 /* A quiet entrance — skipped for anyone who prefers reduced motion. */
 @media (prefers-reduced-motion: no-preference) {
   main {
