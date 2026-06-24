@@ -15,7 +15,7 @@ jobs:
   - name: "Side-project builder"
     blurb: "Incrementally builds out an experimental side project."
     cadence: "continuous"
-    enabled: true
+    enabled: false
   - name: "Status publisher"
     blurb: "Keeps this very page in sync with the live job list."
     cadence: "hourly"
