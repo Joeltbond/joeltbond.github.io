@@ -7,14 +7,17 @@
   --accent-strong: #2f7d99;
   --rule: #e7e3da;
   --code-bg: #f1eee7;
-
   --page-top: 3.2rem;
+}
 
-  @media (min-width: 43rem) {
+@media (min-width: 43rem) {
+  :root {
     --page-top: 6.4rem;
   }
+}
 
-  @media (min-width: 62rem) {
+@media (min-width: 62rem) {
+  :root {
     --page-top: 9.6rem;
   }
 }
@@ -40,14 +43,15 @@ html {
 }
 
 body {
-  font-family: Optima, Candara, "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
-  font-size: 1.7rem;
-  line-height: 1.6;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 20px 24px 80px;
   color: var(--text);
   background-color: var(--bg);
+  font-family: Optima, Candara, "Segoe UI", "Helvetica Neue", system-ui,
+    sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -72,8 +76,6 @@ a:hover {
   border-bottom-color: currentColor;
 }
 
-/* In-body links read as links even without color: a faint underline that
-   firms up on hover. Nav/header links keep the borderless treatment. */
 main p a,
 main li a {
   border-bottom: none;
@@ -100,10 +102,10 @@ main li a:hover {
 }
 
 .page-title {
+  margin: 0 0 0.6em;
   font-size: 3.4rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-  margin: 0 0 0.6em;
 }
 
 h2,
@@ -113,13 +115,14 @@ h3 {
   line-height: 1.3;
 }
 
+h2,
 h3 {
+  padding-bottom: 0.5em;
+  color: var(--muted);
   font-size: 1.25rem;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--muted);
-  padding-bottom: 0.5em;
+  text-transform: uppercase;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -127,61 +130,59 @@ ul li {
   line-height: 1.6;
 }
 
-/* Content lists (Elsewhere on the Web, Email): drop the heavy default
-   indent and disc for a quiet, left-aligned en-dash marker. */
 main ul {
-  list-style: none;
-  padding-left: 0;
   margin: 0.4em 0 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 main ul li {
   position: relative;
-  padding-left: 1.2em;
   margin-bottom: 0.15em;
+  padding-left: 1.2em;
 }
 
 main ul li::before {
-  content: "–";
   position: absolute;
   left: 0;
   color: var(--muted);
+  content: "–";
 }
 
 pre {
-  background-color: var(--code-bg);
-  padding: 14px 16px;
-  border-radius: 6px;
   margin: 32px 0;
+  padding: 14px 16px;
   overflow-x: auto;
+  background-color: var(--code-bg);
+  border-radius: 6px;
 }
 
 code {
+  padding: 0.1em 0.35em;
   background-color: var(--code-bg);
   border-radius: 3px;
-  padding: 0.1em 0.35em;
   font-size: 0.9em;
 }
 
 pre code {
-  background: none;
   padding: 0;
+  background: none;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  li {
-    display: inline;
-    padding-left: 20px;
-  }
+nav li {
+  display: inline;
+  padding-left: 20px;
 }
 
 .navigation {
@@ -193,80 +194,22 @@ nav {
 }
 
 .post-list {
-  list-style: none;
   margin: 0;
   padding: 0;
-}
-
-/* Scheduled-jobs status board (/jobs/). A quiet list: a status dot, the job
-   name with a cadence tag, and a one-line blurb under it. */
-.job-list {
   list-style: none;
-  margin: 1.6em 0 0;
-  padding: 0;
 }
 
-.job-list .job {
-  display: flex;
-  align-items: baseline;
-  gap: 0.7em;
-  padding: 0.7em 0;
-  border-bottom: 1px solid var(--rule);
+.error-page {
+  text-align: center;
 }
 
-.job-list .job::before {
-  content: none; /* override the default en-dash marker */
+.error-code {
+  margin: 0;
+  font-size: 6.8rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
-.job-status {
-  flex: 0 0 auto;
-  width: 0.7em;
-  height: 0.7em;
-  border-radius: 50%;
-  margin-top: 0.45em;
-  border: 1.5px solid var(--accent);
-}
-
-.job-status.is-on {
-  background: var(--accent);
-}
-
-.job-status.is-off {
-  background: transparent;
-  border-color: var(--muted);
-}
-
-.job-body {
-  display: block;
-}
-
-.job-name {
-  font-weight: 600;
-}
-
-.job-cadence {
-  font-size: 1.3rem;
-  color: var(--muted);
-  margin-left: 0.6em;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.job-blurb {
-  display: block;
-  color: var(--muted);
-  font-size: 1.5rem;
-  line-height: 1.45;
-  margin-top: 0.1em;
-}
-
-.job-note {
-  font-size: 1.4rem;
-  color: var(--muted);
-  margin-top: 1.6em;
-}
-
-/* A quiet entrance — skipped for anyone who prefers reduced motion. */
 @media (prefers-reduced-motion: no-preference) {
   main {
     animation: fade-in 0.5s ease both;
@@ -277,6 +220,7 @@ nav {
       opacity: 0;
       transform: translateY(6px);
     }
+
     to {
       opacity: 1;
       transform: none;
